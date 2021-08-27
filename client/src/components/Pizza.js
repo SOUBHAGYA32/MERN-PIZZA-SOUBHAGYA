@@ -3,6 +3,7 @@ import { Modal } from "react-bootstrap";
 import {useDispatch , useSelector} from 'react-redux'
 import { addToCart } from "../actions/cartActions";
 import AOS from 'aos'
+import Noty from 'noty'; 
 import 'aos/dist/aos.css';
 export default function Pizza({ pizza }) {
 
@@ -22,6 +23,12 @@ export default function Pizza({ pizza }) {
   const dispatch = useDispatch()
   function addtocart()
   {
+    new Noty({
+      type: 'success',
+      timeout: 1000,
+      layout: 'topRight',
+      text: "Pizza Added Successfully.."
+    }).show();
     dispatch(addToCart(pizza , quantity , varient))
   }
 

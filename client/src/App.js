@@ -1,5 +1,8 @@
 import './App.css';
 import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Noty from 'noty';  
+import "../node_modules/noty/lib/noty.css";  
+import "../node_modules/noty/lib/themes/mint.css";  
 import 'bootstrap'
 import {BrowserRouter , Route , Link , Switch } from 'react-router-dom'
 import Navbar from './components/Navbar';
