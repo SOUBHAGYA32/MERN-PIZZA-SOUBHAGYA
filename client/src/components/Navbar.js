@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { FaShoppingCart, FaUserPlus} from "react-icons/fa";
 import { logoutUser } from "../actions/userActions";
 export default function Navbar() {
   const cartstate = useSelector((state) => state.cartReducer);
@@ -10,7 +11,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">
         <a className="navbar-brand" href="/">
-          SOUBHAGYA PIZZA
+         <img src="images/logo.png" alt="logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -38,14 +39,17 @@ export default function Navbar() {
             ) : (
               <li className="nav-item">
                 <a className="nav-link" href="/login">
-                  Login
+                  <FaUserPlus className="fa-lg"/>
                 </a>
               </li>
             )}
 
             <li className="nav-item">
               <a className="nav-link" href="/cart">
-                Cart {cartstate.cartItems.length}
+              <FaShoppingCart className="fa-lg"/>
+              <span class="cart-basket d-flex align-items-center justify-content-center">
+              {cartstate.cartItems.length}
+              </span> 
               </a>
             </li>
           </ul>

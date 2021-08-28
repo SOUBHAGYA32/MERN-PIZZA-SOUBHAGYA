@@ -83,3 +83,14 @@ td , th , tr{
   background-size: cover !important;
   height:90vh;
 }
+.cart-basket {
+  font-size: .6rem;
+  position: absolute;
+  top: 23px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  background-color: #418deb;
+  border-radius: 50%;
+}

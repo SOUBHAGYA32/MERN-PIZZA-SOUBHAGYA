@@ -51,7 +51,7 @@ export default function Addpizza() {
           <input
             className="form-control"
             type="text"
-            placeholder="name"
+            placeholder="Name"
             value={name}
             onChange={(e) => {
               setname(e.target.value);
@@ -60,7 +60,7 @@ export default function Addpizza() {
           <input
             className="form-control"
             type="text"
-            placeholder="small varient price"
+            placeholder="Small Varient Price"
             value={smallprice}
             onChange={(e) => {
               setsmallprice(e.target.value);
@@ -69,7 +69,7 @@ export default function Addpizza() {
           <input
             className="form-control"
             type="text"
-            placeholder="medium varient price"
+            placeholder="Medium Varient Price"
             value={mediumprice}
             onChange={(e) => {
               setmediumprice(e.target.value);
@@ -78,7 +78,7 @@ export default function Addpizza() {
           <input
             className="form-control"
             type="text"
-            placeholder="large varient price"
+            placeholder="Large Varient Price"
             value={largeprice}
             onChange={(e) => {
               setlargeprice(e.target.value);
@@ -87,7 +87,7 @@ export default function Addpizza() {
           <input
             className="form-control"
             type="text"
-            placeholder="category"
+            placeholder="Category"
             value={category}
             onChange={(e) => {
               setcategory(e.target.value);
@@ -96,7 +96,7 @@ export default function Addpizza() {
           <input
             className="form-control"
             type="text"
-            placeholder="description"
+            placeholder="Description"
             value={description}
             onChange={(e) => {
               setdescription(e.target.value);
@@ -105,7 +105,7 @@ export default function Addpizza() {
           <input
             className="form-control"
             type="text"
-            placeholder="image url"
+            placeholder="Image URL"
             value={image}
             onChange={(e) => {
               setimage(e.target.value);
